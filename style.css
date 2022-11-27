@@ -11,6 +11,7 @@ body{
 #test::after{content: 'more';}
 
 nav{
+    margin-bottom: 20px;
     background-color: rgb(51, 105, 38);
     height: 10vh;
     width: 100%;
@@ -51,13 +52,13 @@ nav ul li:hover{
     width: 100%;
 
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
 
 .item{
-    margin: 20px 40px;
+    margin: 10px 20px;
     border-radius: 20px;
     background-color: white;
     width: 750px;
@@ -131,8 +132,8 @@ nav ul li:hover{
     border-radius: 50%;
 }
 
-@media screen and (max-width: 820px) {
-    #test::after{content: '820kucuk';}
+@media (820px >= width >= 680px) {
+    #test::after{content: ' 820-680';}
     nav ul li{display: none;}
     #logo{display: block;}
     #imglogo{height: 4vh;margin-top: 10px;}
@@ -141,7 +142,7 @@ nav ul li:hover{
     .item .left{height: 150px; width: 40%;}
     .item .left img{height: 150px;}
     .item .right {height: 150px;}
-    .item .right p{font-size: 1.5rem;}
+    .item .right p{font-size: 1.2rem;}
     .item .right ul{padding-left: 15px;}
     .item .right ul li{font-size: 0.75rem;}
     .item .price {height: 150px;}
@@ -149,8 +150,8 @@ nav ul li:hover{
     .item .price .back{width: 100px; height: 100px;}
 }
 
-@media screen and (max-width: 680px) {
-    #test::after{content: '680kucuk';}
+@media (680px >= width >= 580px) {
+    #test::after{content: ' 680-580';}
     nav ul li{display: none;}
     #logo{display: block;}
     #imglogo{height: 4vh;margin-top: 10px;}
@@ -167,74 +168,56 @@ nav ul li:hover{
     .item .price .back{width: 85px; height: 85px;}
 }
 
-@media screen and (max-width: 580px) {
-    #test::after{content: '580kucuk';}
+@media (580px >= width >= 480px) {
+    #test::after{content: '580-480';}
     nav ul li{display: none;}
     #logo{display: block;}
     #imglogo{height: 4vh;margin-top: 10px;}
 
-    .item{height: 150px; width: 450px;}
-    .item .left{height: 150px; width: 40%;}
-    .item .left img{height: 115px;}
-    .item .right{height: 150px;}
-    .item .right p{font-size: 1.25rem;}
-    .item .right ul{padding-left: 15px;}
-    .item .right ul li{font-size: 0.75rem;}
-    .item .price {height: 150px;}
-    .item .price p{font-size: 1rem;}
-    .item .price .back{width: 75px; height: 75px;}
-}
-
-@media (520px >= width >= 435px) {
-    #test::after{content: '520-435';}
-    nav ul li{display: none;}
-    #logo{display: block;}
-    #imglogo{height: 4vh;margin-top: 10px;}
-
-    .item{height: 150px; width: 450px;}
+    .item{height: 150px; width: 400px;}
     .item .left{height: 150px; width: 40%;}
     .item .left img{height: 100px;}
     .item .right{height: 150px;}
     .item .right p{font-size: 1rem;}
     .item .right ul{padding-left: 10px;}
-    .item .right ul li{font-size: 0.65rem;}
+    .item .right ul li{font-size: 0.75rem;}
     .item .price {height: 150px;}
-    .item .price p{font-size: 0.8rem;}
-    .item .price .back{width: 60px; height: 60px;}
+    .item .price p{font-size: 1rem;}
+    .item .price .back{width: 70px; height: 70px;}
 }
 
-@media (435px >= width >= 360px) {
-    #test::after{content: '435-360';}
+@media (480px >= width >= 380px) {
+    #test::after{content: '480-380';}
     nav ul li{display: none;}
     #logo{display: block;}
-    #imglogo{height: 4vh;margin: 0 10px;}
+    #imglogo{height: 3vh;margin-top: 10px;}
 
-    .item{height: 100px; width: 450px;}
-    .item .left{height: 100px; width: 40%;}
+    .item{height: 150px; width: 300px;}
+    .item .left{height: 150px; width: 40%;}
     .item .left img{height: 75px;}
-    .item .right{height: 100px;}
-    .item .right p{font-size: 0.75rem;}
+    .item .right{height: 150px;}
+    .item .right p{font-size: 0.8rem;}
     .item .right ul{padding-left: 10px;}
-    .item .right ul li{font-size: 0.5rem;}
-    .item .price {height: 100px;}
-    .item .price p{font-size: 0.6rem;}
+    .item .right ul li{font-size: 0.7rem;}
+    .item .price {height: 150px;}
+    .item .price p{font-size: 0.75rem;}
     .item .price .back{width: 50px; height: 50px;}
 }
 
-@media (360px >= width >= 280px) {
-    #test::after{content: '360-280';}
+@media (380px >= width >= 320px) {
+    #test::after{content: '580-540';}
     nav ul li{display: none;}
     #logo{display: block;}
-    #imglogo{height: 4vh;margin-top: 10px;}
+    #imglogo{height: 3vh;margin-top: 10px;}
 
-    .item{height: 75px; width: 600px; margin: 0px 10px;}
-    .item .left{height: 75px; width: 40%;}
-    .item .left img{height: 55px;}
-    .item .right{height: 75px;}
-    .item .right p{font-size: 0.75rem;}
-    .item .right ul{padding-left: 5px;}
-    .item .right ul li{font-size: 0.4rem;}
-    .item .price {height: 75px;}
-    .item .price p{font-size: 0.5rem;}
+    .item{height: 120px; width: 250px;}
+    .item .left{height: 120px; width: 40%;}
+    .item .left img{height: 60px;}
+    .item .right{height: 120px;}
+    .item .right p{font-size: 0.6rem;}
+    .item .right ul{padding-left: 10px;}
+    .item .right ul li{font-size: 0.5rem;}
+    .item .price {height: 120px;}
+    .item .price p{font-size: 0.6rem;}
     .item .price .back{width: 40px; height: 40px;}
-}
+} 
